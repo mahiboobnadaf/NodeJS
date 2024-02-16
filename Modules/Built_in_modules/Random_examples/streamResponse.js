@@ -7,7 +7,7 @@ const server=http.createServer(function(req,res){
     res.writeHead(200,{'Content-Type':'text/plain'});
 
     const myReadStream= fs.createReadStream(__dirname + '/readMe.txt');
-    myReadStream.pipe(res);
+    myReadStream.pipe(res);     //we can pass writeRead as response becoz res is also an writable stream
 })
 
 server.listen(3000);
