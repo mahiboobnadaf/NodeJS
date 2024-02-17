@@ -10,9 +10,6 @@ const aboutStyle = fs.readFileSync('./memory_game/frame_style.css')
 const aboutScript = fs.readFileSync('./memory_game/game_script.js')
 
 const server = http.createServer((req,res)=>{
-
-    const url = req.url
-    console.log(url)
     
     if(req.url == '/' || req.url == '/home'){
         res.writeHead(200, {'content-type' : 'text/html'})
@@ -45,13 +42,9 @@ const server = http.createServer((req,res)=>{
     }
     else{
         res.writeHead(404,{'content-type' : 'text/html'})
-
-<<<<<<< HEAD
         res.write("<h1> 404, Resource Not Found <a href='/'> Go Home </a> </h1>")
-=======
         res.write("<h1> 404, Resource Not Found </h1>")
->>>>>>> db9bb2d (Node modules)
-        
+
         res.end()
     }
 }).listen(5000,()=>{
