@@ -1,0 +1,18 @@
+first do:
+npm init // to initialize the node manager in terminal
+
+then package.json file will be created 
+
+open that file 
+
+then open the terminal and install express and save init
+->  npm install express -save
+this  -save will save the express dependency in package.json file ,
+
+you can check it the dependency object is created 
+
+in dependency all the packages which are used for that project are saved 
+
+if another one want to execute your project , then they dont need to install all dependency one by one
+simply they just need to type -> npm install
+this command will check the package.json file dependencied and install the listed packages
