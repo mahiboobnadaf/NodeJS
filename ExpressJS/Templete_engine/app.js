@@ -11,7 +11,10 @@ const app = express();
 app.set('view engine','ejs');
 
 app.get('/profile/:name',function(req,res){
-    res.render('profile',{person:req.params.name}); 
+
+    var data = {age:23 ,job: "Software Developer"}
+
+    res.render('profile',{person:req.params.name, data : data}); 
 });
 
 app.listen(3000);

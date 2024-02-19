@@ -16,7 +16,7 @@
         text-align: center;
         margin-top: 100px;
     }
-    h1 {
+    h1,h2 {
         color: #333;
         font-size: 36px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -31,6 +31,8 @@
 <body>
     <div class="container">
         <span class="Page-name">Welcome to </span> <h1> <%= person %> </span> Page</h1>
+        <span class="Page-name">Age : </span> <h2> <%=data.age %> </h2>
+        <span class="Page-name">Job : </span> <h2> <%=data.job %> </h2> 
     </div>
 </body>
 </html>
