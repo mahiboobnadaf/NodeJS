@@ -12,7 +12,7 @@ app.set('view engine','ejs');
 
 app.get('/profile/:name',function(req,res){
 
-    var data = {age:23 ,job: "Software Developer"}
+    var data = {age:23 ,job: "Software Developer", Hobbies:['Fishing','Coding', 'Learning' ]}
 
     res.render('profile',{person:req.params.name, data : data}); 
 });
