@@ -9,7 +9,7 @@ const server = http.createServer((req,res)=>{
         
     }
     else if(req.url=='/about'){
-        res.end("This is About page")
+        res.end("<h1>This is About page</h1>")
     }
     else{
         res.end("404 resource Not Found")
